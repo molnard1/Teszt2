@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Teszt2.Tests.MSTest\**" />
+    <Compile Remove="Teszt2.Tests.NUnit\**" />
+    <EmbeddedResource Remove="Teszt2.Tests.MSTest\**" />
+    <EmbeddedResource Remove="Teszt2.Tests.NUnit\**" />
+    <None Remove="Teszt2.Tests.MSTest\**" />
+    <None Remove="Teszt2.Tests.NUnit\**" />
+  </ItemGroup>
+
+</Project>
